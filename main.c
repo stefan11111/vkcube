@@ -58,10 +58,13 @@
 #include <sys/ioctl.h>
 #include <sys/stat.h>
 #include <termios.h>
-#include <vulkan/vulkan_intel.h>
 #endif
 
 #include "common.h"
+
+#if defined(HAVE_VULKAN_INTEL_H)
+#include <vulkan/vulkan_intel.h> /* must be included after common.h */
+#endif
 
 enum display_mode {
    DISPLAY_MODE_AUTO = 0,
