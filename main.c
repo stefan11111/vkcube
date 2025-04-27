@@ -53,6 +53,7 @@
 #include <linux/kd.h>
 #include <linux/major.h>
 #include <linux/vt.h>
+#include <sys/sysmacros.h> /* for major() */
 #include <signal.h>
 #include <sys/ioctl.h>
 #include <sys/stat.h>
